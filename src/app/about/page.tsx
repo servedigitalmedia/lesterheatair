@@ -6,7 +6,7 @@ const Page = () => {
     <div className="flex justify-center flex-col items-center">
       <h1 className="text-center">Brent Lester</h1>
       <Image src={HomeImage} alt="homeimage" height={500} />
-      <h4 className="text-center mx-[6%] my-2">
+      <h4 className="text-center mx-[6%] mt-2 mb-24">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea

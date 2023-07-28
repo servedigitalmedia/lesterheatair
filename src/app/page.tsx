@@ -42,7 +42,7 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="w-3/6 items-center justify-center flex my-1 h-[420px] bg-[#606060] overflow-hidden">
+        <div className="w-3/6 items-center justify-center flex my-1 h-[420px] bg-[#f5f5f5] overflow-hidden">
           <Image
             src={placeholder9}
             alt="Lester heat and air home page image"
