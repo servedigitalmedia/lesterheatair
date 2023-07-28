@@ -2,26 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  label {
+    @apply text-[#3c3c3c];
+  }
+  h1 {
+    @apply text-6xl text-[#3c3c3c];
+  }
+  h2 {
+    @apply text-4xl text-[#3c3c3c]
+  }
+  h3 {
+    @apply text-2xl text-[#3c3c3c]
+  }
+  h4 {
+    @apply text-lg text-[#3c3c3c]
+  }
+  p {
+    @apply text-[#3c3c3c]
+  }
+  li {
+    @apply ease-in-out
   }
 }
 
+li:hover {
+  border-bottom: solid #2ea4fb;
+}
+
+.grain-bg {
+  height: 100%;
+  width: 100%;
+  background-image: url('/grain.png');
+  background-position: 0 0;
+  background-size: 300px 300px;
+}
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: white;
+  color: black;
 }

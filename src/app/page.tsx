@@ -1,113 +1,191 @@
-import Image from 'next/image'
+'use-client';
+import Image from 'next/image';
+import HomeImage from '../../public/HomeImage.jpeg';
+import logo from '../../public/lester heat and air logo.png';
+import placeholder2 from '../../public/placeholder2.png';
+import placeholder3 from '../../public/placeholder3.png';
+import placeholder4 from '../../public/placeholder4.png';
+import placeholder5 from '../../public/placeholder5.png';
+import placeholder6 from '../../public/placeholder6.png';
+import placeholder7 from '../../public/placeholder7.png';
+import placeholder8 from '../../public/placeholder8.png';
+import placeholder9 from '../../public/placeholder9.png';
+import { BsStarFill } from 'react-icons/bs';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div>
+      <div id="home" className="w-full flex flex-row">
+        <div id="info" className="w-3/6 px-36 py-8 my-1 bg-[#f5f5f5]">
+          <h1>
+            Lester <span className="text-[#ff3f3f]">Heat</span> and{' '}
+            <span className="text-[#2ea4fb]">Air</span>
+          </h1>
+          <h2 className=" mt-[8px]">
+            Established <span className="">2016</span>
+          </h2>
+          <p className="mt-[8px]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <div className="flex flex-row justify-evenly">
+            <button className="p-4 text-white bg-[#ff3f3f] hover:bg-[#d02230] active:scale-[.99] mt-4 disabled:opacity-20 disabled:scale-100">
+              View financing options
+            </button>
+            <button className="p-4 text-white bg-[#2ea4fb] hover:bg-[#2a72c1] active:scale-[.99] mt-4 disabled:opacity-20 disabled:scale-100">
+              About Us
+            </button>
+          </div>
+        </div>
+        <div className="w-3/6 items-center justify-center flex my-1 h-[420px] bg-[#606060] overflow-hidden">
+          <Image
+            src={placeholder9}
+            alt="Lester heat and air home page image"
+            style={{ objectFit: 'cover' }}
+            className="w-full"
+          />
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="mt-20 w-full">
+        <h1 className="mb-10 text-center ">Services</h1>
+        <div className=" flex flex-row flex-wrap w-full">
+          <div className="bg-[#f0f0f0] w-[25%] mx-[4%]  my-4 p-3">
+            <h3>Here is a service</h3>
+            <Image
+              src={placeholder8}
+              alt="Lester heat and air home page image"
+              style={{ objectFit: 'cover' }}
+              className="w-full"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div className="bg-[#f0f0f0] w-[25%] mx-[4%]  my-4 p-3">
+            <h3>Here is a service</h3>
+            <Image
+              src={placeholder4}
+              alt="Lester heat and air home page image"
+              style={{ objectFit: 'cover' }}
+              className="w-full"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div className="bg-[#f0f0f0] w-[25%] mx-[4%]  my-4 p-3">
+            <h3>Here is a service</h3>
+            <Image
+              src={placeholder2}
+              alt="Lester heat and air home page image"
+              style={{ objectFit: 'cover' }}
+              className="w-full"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div className="bg-[#f0f0f0] w-[25%] mx-[4%]  my-4 p-3">
+            <h3>Here is a service</h3>
+            <Image
+              src={placeholder3}
+              alt="Lester heat and air home page image"
+              style={{ objectFit: 'cover' }}
+              className="w-full"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div className="bg-[#f0f0f0] w-[25%] mx-[4%]  my-4 p-3">
+            <h3>Here is a service</h3>
+            <Image
+              src={placeholder5}
+              alt="Lester heat and air home page image"
+              style={{ objectFit: 'cover' }}
+              className="w-full"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div className="bg-[#f0f0f0] w-[25%] mx-[4%]  my-4 p-3">
+            <h3>Here is a service</h3>
+            <Image
+              src={placeholder6}
+              alt="Lester heat and air home page image"
+              style={{ objectFit: 'cover' }}
+              className="w-full"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="mt-32 w-full bg-[#f0f0f0] pt-8">
+        <h1 className="text-center mb-10">Reviews</h1>
+        <div className="flex flex-row w-full pb-32">
+          <div className=" bg-[#ff3f3f]/10 w-[30%] mx-[10%] my-4 p-3 relative min-h-[200px]">
+            <h3>&quot;Awesome Job&quot;</h3>
+            <p className="ml-3">
+              Brent does an awesome job! He&apos;s very reliable, honest and
+              friendly.
+            </p>
+            <div className="bottom-0 absolute left-[50%] translate-x-[-50%] translate-y-[-50%]">
+              <p className="text-center">-Robbie</p>
+              <div className="flex flex-row justify-center">
+                <BsStarFill className="text-yellow-500" />
+                <BsStarFill className="text-yellow-500" />
+                <BsStarFill className="text-yellow-500" />
+                <BsStarFill className="text-yellow-500" />
+                <BsStarFill className="text-yellow-500" />
+              </div>
+            </div>
+          </div>
+          <div className=" bg-[#ff3f3f]/10 w-[30%] mx-[10%] my-4 p-3 relative min-h-[200px]">
+            <h3>&quot;Very Friendly&quot;</h3>
+            <p className="ml-3">
+              I think Brent Lester of Lester Heating & Air Conditioning is a
+              very friendly guy that will do a great job fixing your A/C. Give
+              him a call when you need work done.
+            </p>
+            <div className="bottom-0 absolute left-[50%] translate-x-[-50%] translate-y-[-50%]">
+              <p className="text-center">-Marilyn</p>
+              <div className="flex flex-row justify-center">
+                <BsStarFill className="text-yellow-500" />
+                <BsStarFill className="text-yellow-500" />
+                <BsStarFill className="text-yellow-500" />
+                <BsStarFill className="text-yellow-500" />
+                <BsStarFill className="text-yellow-500" />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </main>
-  )
+    </div>
+  );
 }
