@@ -99,7 +99,7 @@ export default function RootLayout({
               </ul>
               <div
                 onClick={handleNav}
-                className="text-white mr-2 md:hidden rounded-full p-3 cursor-pointer hover:bg-black/10 active:scale-95 ease-in duration-100"
+                className="text-[#3c3c3c] md:hidden rounded-full p-3 cursor-pointer hover:bg-black/10 active:scale-95 ease-in duration-100"
               >
                 <AiOutlineMenu size={30} />
               </div>
@@ -115,7 +115,7 @@ export default function RootLayout({
             <div
               className={
                 nav
-                  ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen  bg-[#000000] p-8 ease-in duration-500'
+                  ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen  bg-[#f0f0f0] p-8 ease-in duration-500'
                   : 'fixed left-[-100%] top-0 p-8 ease-in duration-500 h-screen'
               }
             >
@@ -149,19 +149,19 @@ export default function RootLayout({
                       Home
                     </li>
                   </Link>
-                  <Link href="/services#nav">
+                  <Link href="/services">
                     <li onClick={() => setNav(false)} className="py-4 text-sm">
                       Services
                     </li>
                   </Link>
-                  <Link href="/gallery#nav">
+                  <Link href="/about">
                     <li onClick={() => setNav(false)} className="py-4 text-sm">
-                      Gallery
+                      About
                     </li>
                   </Link>
-                  <Link href="/contact#nav">
+                  <Link href="/contact">
                     <li onClick={() => setNav(false)} className="py-4 text-sm">
-                      Contact Us
+                      Contact
                     </li>
                   </Link>
                 </ul>

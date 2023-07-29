@@ -15,8 +15,11 @@ import { BsStarFill } from 'react-icons/bs';
 export default function Home() {
   return (
     <div>
-      <div id="home" className="w-full flex flex-row">
-        <div id="info" className="w-3/6 px-36 py-8 my-1 bg-[#f5f5f5]">
+      <div id="home" className="w-full flex flex-row flex-wrap">
+        <div
+          id="info"
+          className="w-full md:w-3/6 px-4 md:px-36 py-8 md:my-1 bg-[#f5f5f5]"
+        >
           <h1>
             Lester <span className="text-[#ff3f3f]">Heat</span> and{' '}
             <span className="text-[#2ea4fb]">Air</span>
@@ -42,7 +45,7 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="w-3/6 items-center justify-center flex my-1 h-[420px] bg-[#f5f5f5] overflow-hidden">
+        <div className="w-full md:w-3/6 items-center justify-center flex md:my-1 h-[420px] bg-[#f5f5f5] overflow-hidden">
           <Image
             src={placeholder9}
             alt="Lester heat and air home page image"
@@ -54,7 +57,7 @@ export default function Home() {
       <div className="mt-20 w-full">
         <h1 className="mb-10 text-center ">Services</h1>
         <div className=" flex flex-row flex-wrap w-full">
-          <div className="bg-[#f0f0f0] w-[25%] mx-[4%]  my-4 p-3">
+          <div className="bg-[#f0f0f0] w-[90%] mx-[5%] md:w-[25%] md:mx-[4%] my-4 p-3">
             <h3>Here is a service</h3>
             <Image
               src={placeholder8}
@@ -69,7 +72,7 @@ export default function Home() {
               nisi ut aliquip ex ea commodo consequat.
             </p>
           </div>
-          <div className="bg-[#f0f0f0] w-[25%] mx-[4%]  my-4 p-3">
+          <div className="bg-[#f0f0f0] w-[90%] mx-[5%] md:w-[25%] md:mx-[4%]  my-4 p-3">
             <h3>Here is a service</h3>
             <Image
               src={placeholder4}
@@ -84,7 +87,7 @@ export default function Home() {
               nisi ut aliquip ex ea commodo consequat.
             </p>
           </div>
-          <div className="bg-[#f0f0f0] w-[25%] mx-[4%]  my-4 p-3">
+          <div className="bg-[#f0f0f0] w-[90%] mx-[5%] md:w-[25%] md:mx-[4%]  my-4 p-3">
             <h3>Here is a service</h3>
             <Image
               src={placeholder2}
@@ -99,7 +102,7 @@ export default function Home() {
               nisi ut aliquip ex ea commodo consequat.
             </p>
           </div>
-          <div className="bg-[#f0f0f0] w-[25%] mx-[4%]  my-4 p-3">
+          <div className="bg-[#f0f0f0] w-[90%] mx-[5%] md:w-[25%] md:mx-[4%]  my-4 p-3">
             <h3>Here is a service</h3>
             <Image
               src={placeholder3}
@@ -114,7 +117,7 @@ export default function Home() {
               nisi ut aliquip ex ea commodo consequat.
             </p>
           </div>
-          <div className="bg-[#f0f0f0] w-[25%] mx-[4%]  my-4 p-3">
+          <div className="bg-[#f0f0f0] w-[90%] mx-[5%] md:w-[25%] md:mx-[4%]  my-4 p-3">
             <h3>Here is a service</h3>
             <Image
               src={placeholder5}
@@ -129,7 +132,7 @@ export default function Home() {
               nisi ut aliquip ex ea commodo consequat.
             </p>
           </div>
-          <div className="bg-[#f0f0f0] w-[25%] mx-[4%]  my-4 p-3">
+          <div className="bg-[#f0f0f0] w-[90%] mx-[5%] md:w-[25%] md:mx-[4%]  my-4 p-3">
             <h3>Here is a service</h3>
             <Image
               src={placeholder6}
@@ -148,8 +151,8 @@ export default function Home() {
       </div>
       <div className="mt-32 w-full bg-[#f0f0f0] pt-8">
         <h1 className="text-center mb-10">Reviews</h1>
-        <div className="flex flex-row w-full pb-32">
-          <div className=" bg-[#ff3f3f]/10 w-[30%] mx-[10%] my-4 p-3 relative min-h-[200px]">
+        <div className="flex flex-row flex-wrap w-full pb-32">
+          <div className=" bg-[#c2c2c2] w-[90%] mx-[5%] md:w-[30%] md:mx-[10%] my-4 p-3 relative min-h-[200px]">
             <h3>&quot;Awesome Job&quot;</h3>
             <p className="ml-3">
               Brent does an awesome job! He&apos;s very reliable, honest and
@@ -166,7 +169,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className=" bg-[#ff3f3f]/10 w-[30%] mx-[10%] my-4 p-3 relative min-h-[200px]">
+          <div className=" bg-[#c2c2c2] w-[90%] mx-[5%] md:w-[30%] md:mx-[10%] my-4 p-3 relative min-h-[200px]">
             <h3>&quot;Very Friendly&quot;</h3>
             <p className="ml-3">
               I think Brent Lester of Lester Heating & Air Conditioning is a
