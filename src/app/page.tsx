@@ -11,6 +11,7 @@ import placeholder7 from '../../public/placeholder7.png';
 import placeholder8 from '../../public/placeholder8.png';
 import placeholder9 from '../../public/placeholder9.png';
 import { BsStarFill } from 'react-icons/bs';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -40,9 +41,11 @@ export default function Home() {
             <button className="p-4 text-white bg-[#ff3f3f] hover:bg-[#d02230] active:scale-[.99] mt-4 disabled:opacity-20 disabled:scale-100">
               View financing options
             </button>
-            <button className="p-4 text-white bg-[#2ea4fb] hover:bg-[#2a72c1] active:scale-[.99] mt-4 disabled:opacity-20 disabled:scale-100">
-              About Us
-            </button>
+            <Link href="/about">
+              <button className="p-4 text-white bg-[#2ea4fb] hover:bg-[#2a72c1] active:scale-[.99] mt-4 disabled:opacity-20 disabled:scale-100">
+                About Us
+              </button>
+            </Link>
           </div>
         </div>
         <div className="w-full md:w-3/6 items-center justify-center flex md:my-1 h-[420px] bg-[#f5f5f5] overflow-hidden">
@@ -153,7 +156,7 @@ export default function Home() {
         <h1 className="text-center mb-10">Reviews</h1>
         <div className="flex flex-row flex-wrap w-full pb-32">
           <div className=" bg-[#c2c2c2] w-[90%] mx-[5%] md:w-[30%] md:mx-[10%] my-4 p-3 relative min-h-[200px]">
-            <h3>&quot;Awesome Job&quot;</h3>
+            <h3 className="bg-[#ff3f3f]/40">&quot;Awesome Job&quot;</h3>
             <p className="ml-3">
               Brent does an awesome job! He&apos;s very reliable, honest and
               friendly.
@@ -170,7 +173,7 @@ export default function Home() {
             </div>
           </div>
           <div className=" bg-[#c2c2c2] w-[90%] mx-[5%] md:w-[30%] md:mx-[10%] my-4 p-3 relative min-h-[200px]">
-            <h3>&quot;Very Friendly&quot;</h3>
+            <h3 className="text-[#2ea4fb]">&quot;Very Friendly&quot;</h3>
             <p className="ml-3">
               I think Brent Lester of Lester Heating & Air Conditioning is a
               very friendly guy that will do a great job fixing your A/C. Give

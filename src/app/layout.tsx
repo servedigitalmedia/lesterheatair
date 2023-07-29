@@ -10,6 +10,8 @@ import { BsFacebook, BsInstagram } from 'react-icons/bs';
 import { MdOutlineLocationOn } from 'react-icons/md';
 import { FaPhone } from 'react-icons/fa';
 import { useState } from 'react';
+import DesktopFooter from '@/components/DesktopFooter';
+import MobileFooter from '@/components/MobileFooter';
 
 const inter = Roboto({ subsets: ['latin'], weight: '500' });
 
@@ -29,7 +31,7 @@ export default function RootLayout({
   const servicesStyle =
     pathname === '/services' ? { borderBottom: 'solid #2ea4fb' } : {};
   const galleryStyle =
-    pathname === '/gallery' ? { borderBottom: 'solid #2ea4fb' } : {};
+    pathname === '/about' ? { borderBottom: 'solid #2ea4fb' } : {};
   const contactStyle =
     pathname === '/contact' ? { borderBottom: 'solid #2ea4fb' } : {};
 
@@ -178,46 +180,8 @@ export default function RootLayout({
           </div>
         </div>
         {children}
-        <div
-          id="footer"
-          className="fixed bottom-0 w-full h-20 bg-[#3c3c3c] flex justify-between px-40"
-        >
-          <div className="flex flex-row">
-            <MdOutlineLocationOn size={65} className="bg white text-white" />
-            <div>
-              <p className="text-[#2ea4fb]">Location:</p>
-              <p className="text-white">23142 Highway 19</p>
-              <p className="text-white">Gotebo, OK, 73041</p>
-            </div>
-          </div>
-          <div className="flex flex-row">
-            <FaPhone size={35} className="text-white mr-2 mt-[6px]" />
-            <div>
-              <p className="text-[#2ea4fb]">Phone:</p>
-              <p className="text-white">(580) 639-2849</p>
-            </div>
-          </div>
-          <div className="flex flex-row">
-            <AiOutlineMail size={45} className="text-white mr-2" />
-            <div>
-              <p className="text-[#2ea4fb]">Email:</p>
-              <p className="text-white">
-                <a href="mailto: lesterheatandair@gmail.com">
-                  lesterheatandair@gmail.com
-                </a>
-              </p>
-            </div>
-          </div>
-          <div>
-            <p className="text-[#2ea4fb]">Social media:</p>
-            <div className="flex flex-row">
-              <a href="https://www.facebook.com/LesterHVAC/" target="_blank">
-                <BsFacebook size={40} className="text-[#4267B2]" />
-              </a>
-              <BsInstagram size={40} className="text-[#DD2A7B] ml-2" />
-            </div>
-          </div>
-        </div>
+        <DesktopFooter />
+        <MobileFooter />
       </body>
     </html>
   );

@@ -136,11 +136,12 @@ const Page = () => {
                 className="border-2 rounded-lg p-3 flex border-gray-300"
               >
                 <option value="">Select a subject</option>
-                <option value="general">General Inquiry</option>
-                <option value="web">Web Design</option>
-                <option value="branding">General Branding</option>
-                <option value="social">Social Media Promotion</option>
-                <option value="video">Video Production</option>
+                <option value="Request a quote">Request a quote</option>
+                <option value="Request financing options">
+                  Request financing options
+                </option>
+                <option value="General inquiry">General inquiry</option>
+                <option value="Other">Other</option>
               </select>
             </div>
             <div className="flex flex-col py-2">
