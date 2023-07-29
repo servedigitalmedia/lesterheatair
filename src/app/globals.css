@@ -22,13 +22,10 @@
     @apply text-[#3c3c3c] text-sm md:text-base
   }
   li {
-    @apply ease-in-out
+    @apply ease-in-out md:hover:border-b-[3px] md:hover:border-[#2ea4fb]
   }
 }
 
-li:hover {
-  border-bottom: solid #2ea4fb;
-}
 
 .grain-bg {
   height: 100%;
@@ -40,4 +37,8 @@ li:hover {
 body {
   background-color: white;
   color: black;
+}
+
+a, svg, div {
+  -webkit-tap-highlight-color: transparent;
 }

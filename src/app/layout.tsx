@@ -1,14 +1,11 @@
 'use client';
 import Image from 'next/image';
 import './globals.css';
-import { Inter, Roboto } from 'next/font/google';
+import { Roboto } from 'next/font/google';
 import Link from 'next/link';
 import logo from '../../public/lester heat and air logo.png';
 import { usePathname } from 'next/navigation';
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from 'react-icons/ai';
-import { BsFacebook, BsInstagram } from 'react-icons/bs';
-import { MdOutlineLocationOn } from 'react-icons/md';
-import { FaPhone } from 'react-icons/fa';
 import { useState } from 'react';
 import DesktopFooter from '@/components/DesktopFooter';
 import MobileFooter from '@/components/MobileFooter';
@@ -133,18 +130,14 @@ export default function RootLayout({
                   </Link>
                   <div
                     onClick={handleNav}
-                    className="rounded-full p-3 cursor-pointer text-white -mr-[10px]"
+                    className="rounded-full p-3 cursor-pointer text-[#3c3c3c] -mr-[10px]"
                   >
                     <AiOutlineClose />
                   </div>
                 </div>
-                <div className="border-b border-white my-4">
-                  <p className="w-full md:w-[90%] py-4 text-xs">
-                    Serving to build your brand
-                  </p>
-                </div>
+                <div className="border-b border-[#3c3c3c] mt-4"></div>
               </div>
-              <div className="py-4 flex flex-col">
+              <div className="py-2 flex flex-col">
                 <ul className="uppercase navList">
                   <Link href="/">
                     <li onClick={() => setNav(false)} className="py-4 text-sm">
