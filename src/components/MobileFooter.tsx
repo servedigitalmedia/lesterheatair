@@ -9,7 +9,9 @@ const MobileFooter = () => {
       id="footer"
       className="fixed bottom-0 w-full h-12 bg-[#3c3c3c] flex justify-between px-4 pt-2 md:hidden"
     >
-      <MdOutlineLocationOn size={35} className="bg white text-[#2ea4fb]" />
+      <a href="https://goo.gl/maps/h4SkpMJqDJuSUcZ46" target="_blank">
+        <MdOutlineLocationOn size={35} className="bg white text-[#2ea4fb]" />
+      </a>
       <FaPhone size={25} className="text-white mr-2 mt-[6px]" />
       <AiOutlineMail size={35} className="text-white mr-2" />
       <a

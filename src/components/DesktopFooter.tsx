@@ -10,7 +10,9 @@ const DesktopFooter = () => {
       className="fixed bottom-0 w-full h-12 bg-[#3c3c3c] md:flex justify-between px-40 hidden"
     >
       <div className="flex flex-row">
-        <MdOutlineLocationOn size={45} className="bg white text-[#2ea4fb]" />
+        <a href="https://goo.gl/maps/h4SkpMJqDJuSUcZ46" target="_blank">
+          <MdOutlineLocationOn size={45} className="bg white text-[#2ea4fb]" />
+        </a>
         <div>
           <p className="text-white">23142 Highway 19</p>
           <p className="text-white">Gotebo, OK, 73041</p>

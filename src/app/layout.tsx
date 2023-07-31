@@ -132,7 +132,7 @@ export default function RootLayout({
                     onClick={handleNav}
                     className="rounded-full p-3 cursor-pointer text-[#3c3c3c] -mr-[10px]"
                   >
-                    <AiOutlineClose />
+                    <AiOutlineClose size={20} />
                   </div>
                 </div>
                 <div className="border-b border-[#3c3c3c] mt-4"></div>
@@ -140,22 +140,34 @@ export default function RootLayout({
               <div className="py-2 flex flex-col">
                 <ul className="uppercase navList">
                   <Link href="/">
-                    <li onClick={() => setNav(false)} className="py-4 text-sm">
+                    <li
+                      onClick={() => setNav(false)}
+                      className="py-4 text-sm text-[#3c3c3c]"
+                    >
                       Home
                     </li>
                   </Link>
                   <Link href="/services">
-                    <li onClick={() => setNav(false)} className="py-4 text-sm">
+                    <li
+                      onClick={() => setNav(false)}
+                      className="py-4 text-sm text-[#3c3c3c]"
+                    >
                       Services
                     </li>
                   </Link>
                   <Link href="/about">
-                    <li onClick={() => setNav(false)} className="py-4 text-sm">
+                    <li
+                      onClick={() => setNav(false)}
+                      className="py-4 text-sm text-[#3c3c3c]"
+                    >
                       About
                     </li>
                   </Link>
                   <Link href="/contact">
-                    <li onClick={() => setNav(false)} className="py-4 text-sm">
+                    <li
+                      onClick={() => setNav(false)}
+                      className="py-4 text-sm text-[#3c3c3c]"
+                    >
                       Contact
                     </li>
                   </Link>
