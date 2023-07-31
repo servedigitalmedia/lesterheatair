@@ -7,19 +7,19 @@ const MobileFooter = () => {
   return (
     <div
       id="footer"
-      className="fixed bottom-0 w-full h-20 bg-[#3c3c3c] flex justify-between px-4 pt-3 md:hidden"
+      className="fixed bottom-0 w-full h-12 bg-[#3c3c3c] flex justify-between px-4 pt-2 md:hidden"
     >
-      <MdOutlineLocationOn size={50} className="bg white text-white" />
-      <FaPhone size={35} className="text-white mr-2 mt-[6px]" />
-      <AiOutlineMail size={45} className="text-white mr-2" />
+      <MdOutlineLocationOn size={35} className="bg white text-[#2ea4fb]" />
+      <FaPhone size={25} className="text-white mr-2 mt-[6px]" />
+      <AiOutlineMail size={35} className="text-white mr-2" />
       <a
         href="https://www.facebook.com/LesterHVAC/"
         target="_blank"
         className="mt-1"
       >
-        <BsFacebook size={40} className="text-[#4267B2]" />
+        <BsFacebook size={30} className="text-[#4267B2]" />
       </a>
-      <BsInstagram size={40} className="text-[#DD2A7B] ml-2 mt-1" />
+      <BsInstagram size={30} className="text-[#DD2A7B] ml-2 mt-1" />
     </div>
   );
 };
