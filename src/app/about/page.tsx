@@ -9,28 +9,33 @@ const Page = () => {
         Lester <span className="text-[#ff3f3f]">Heat</span> and{' '}
         <span className="text-[#2ea4fb]">Air</span>
       </h1>
-      <div className="bg-[#f5f5f5] mt-1">
+      <div className="bg-[#f5f5f5] mt-1 pb-2">
         <div className="flex justify-center flex-col md:flex-row items-center ">
           <div className="mx-[6%]">
             <h3>
               At Lester Heat and Air, we pride ourselves on customer satisfaction through providing knowledge and over 35 years of experience to each HVAC job we work on. 
             </h3>
             <br/>
+            <br className='hidden lg:block'/>
             <h3>
               Along with being family owned and operated, we are also proud of being a local business in the Kiowa county community. Servicing all brands of HVAC equipment, whether residential or light commercial projects, Lester Heat and Air will get the job done. 
             </h3>
             <br/>
-            <h3>
-              We also sell Trane and Lennox products for new installations. Ask us for a quote and inquire about our financing options to get your heat and air conditioning units operating quickly!
-            </h3>
           </div>
           <Image
             src={truck}
             alt="homeimage"
-            height={500}
-            className="md:ml-[6%]"
-          />
+            className="md:ml-[6%] max-w-[35%] m-5 hidden lg:block"
+            />
         </div>
+        <h3 className='mx-[6%] mb-2'>
+          We also sell Trane and Lennox products for new installations. Ask us for a quote and inquire about our financing options to get your heat and air conditioning units operating quickly!
+        </h3>
+        <Image
+            src={truck}
+            alt="homeimage"
+            className="mx-[5%] block w-[90%] lg:hidden"
+            />
       </div>
     
       <h1 className="text-center bg-[#f5f5f5] mt-20">Brent Lester</h1>
