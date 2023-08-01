@@ -11,13 +11,13 @@ const Page = () => {
       </h1>
       <div className="bg-[#f5f5f5] mt-1">
         <div className="flex justify-center flex-col md:flex-row items-center ">
-          <div className="mb-24 mt-2 mx-[6%]">
+          <div className="mx-[6%]">
             <h3>
               At Lester Heat and Air, we pride ourselves on customer satisfaction through providing knowledge and over 35 years of experience to each HVAC job we work on. 
             </h3>
             <br/>
             <h3>
-              Servicing all brands of HVAC equipment, whether residential or light commercial projects, Lester Heat and Air will get the job done. 
+              Along with being family owned and operated, we are also proud of being a local business in the Kiowa county community. Servicing all brands of HVAC equipment, whether residential or light commercial projects, Lester Heat and Air will get the job done. 
             </h3>
             <br/>
             <h3>
@@ -34,7 +34,7 @@ const Page = () => {
       </div>
     
       <h1 className="text-center bg-[#f5f5f5] mt-20">Brent Lester</h1>
-      <div className="bg-[#f5f5f5] mt-1">
+      <div className="bg-[#f5f5f5] mt-1 mb-20">
         <div className="flex justify-center flex-col md:flex-row items-center ">
           <Image
             src={HomeImage}
