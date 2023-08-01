@@ -113,7 +113,7 @@ export default function Home() {
       <div className="mt-32 w-full bg-[#f0f0f0] pt-8">
         <h1 className="text-center mb-10">Reviews</h1>
         <div className="flex flex-row flex-wrap w-full pb-32">
-          <div className=" bg-[#c2c2c2] w-[90%] mx-[5%] md:w-[30%] md:mx-[10%] my-4 p-3 relative min-h-[200px]">
+          <div className=" bg-[#e6e6e6] w-[90%] mx-[5%] md:w-[30%] md:mx-[10%] my-4 p-3 relative min-h-[200px]">
             <h3 className="text-[#2ea4fb]">&quot;Awesome Job&quot;</h3>
             <p className="ml-3">
               Brent does an awesome job! He&apos;s very reliable, honest and
@@ -130,7 +130,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className=" bg-[#c2c2c2] w-[90%] mx-[5%] md:w-[30%] md:mx-[10%] my-4 p-3 relative min-h-[200px]">
+          <div className=" bg-[#e6e6e6] w-[90%] mx-[5%] md:w-[30%] md:mx-[10%] my-4 p-3 relative min-h-[200px]">
             <h3 className="text-[#2ea4fb]">&quot;Very Friendly&quot;</h3>
             <p className="ml-3">
               I think Brent Lester of Lester Heating & Air Conditioning is a
