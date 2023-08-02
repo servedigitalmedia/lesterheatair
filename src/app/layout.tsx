@@ -25,8 +25,6 @@ export default function RootLayout({
   };
 
   const homeStyle = pathname === '/' ? { borderBottom: 'solid #2ea4fb' } : {};
-  const servicesStyle =
-    pathname === '/services' ? { borderBottom: 'solid #2ea4fb' } : {};
   const galleryStyle =
     pathname === '/about' ? { borderBottom: 'solid #2ea4fb' } : {};
   const contactStyle =
@@ -54,11 +52,13 @@ export default function RootLayout({
           <div className="flex justify-between items-center w-full h-full px-2">
             <div className="w-full flex items-center">
               <div className="flex flex-row justify-normal w-[125px] md:w-[150px] lg:w-[175px] lg:ml-10">
-                <Image
-                  src={logo}
-                  alt="Lester heat and air logo"
-                  className="w-[75%]"
-                />
+                <Link href="/">
+                  <Image
+                    src={logo}
+                    alt="Lester heat and air logo"
+                    className="w-[75%]"
+                  />
+                </Link>
               </div>
             </div>
             <div>
@@ -69,14 +69,6 @@ export default function RootLayout({
                     style={homeStyle}
                   >
                     Home
-                  </li>
-                </Link>
-                <Link href="/services" className="mx-5">
-                  <li
-                    className="py-[5px] md:text-xl lg:text-xl navItems"
-                    style={servicesStyle}
-                  >
-                    Services
                   </li>
                 </Link>
                 <Link href="/about" className="mx-5">
@@ -145,14 +137,6 @@ export default function RootLayout({
                       className="py-4 text-sm text-[#3c3c3c]"
                     >
                       Home
-                    </li>
-                  </Link>
-                  <Link href="/services">
-                    <li
-                      onClick={() => setNav(false)}
-                      className="py-4 text-sm text-[#3c3c3c]"
-                    >
-                      Services
                     </li>
                   </Link>
                   <Link href="/about">
