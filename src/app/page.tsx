@@ -1,6 +1,7 @@
 'use-client';
 import Image from 'next/image';
 import placeholder2 from '../../public/placeholder2.png';
+import placeholder3 from '../../public/placeholder3.png';
 import placeholder4 from '../../public/placeholder4.png';
 import placeholder5 from '../../public/placeholder5.png';
 import placeholder6 from '../../public/placeholder6.png';
@@ -61,7 +62,7 @@ export default function Home() {
             </h3>
             <h3 className="hidden md:block">&nbsp;</h3>
             <Image
-              src={placeholder6}
+              src={placeholder3}
               alt="Lester heat and air home page image"
               style={{ objectFit: 'cover' }}
               className="w-full"
