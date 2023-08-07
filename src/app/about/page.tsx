@@ -63,12 +63,13 @@ const Page = () => {
             </h4>
             <br />
             <h4>
-              With extensive knowledge on unit repair and maintenance (as well
-              the HVAC industry at large), Brent also works as an Industrial
+              With extensive knowledge of unit repair and maintenance (as well
+              as the HVAC industry at large), Brent also works as an Industrial
               Coordinator/Trainer for the Business Industries Service Department
-              at Caddo Kiowa Technology Center. You can trust Brent to provide
-              knowledge and experience when working on your home’s heating and
-              air conditioning needs!
+              at Caddo Kiowa Technology Center (as well as formerly being their
+              HVAC Instructor). You can trust Brent to provide knowledge and
+              experience when working on your home’s heating and air
+              conditioning needs!
             </h4>
             <br />
             <h2>Education & Credentials:</h2>

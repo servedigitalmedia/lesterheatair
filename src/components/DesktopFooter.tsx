@@ -45,7 +45,9 @@ const DesktopFooter = () => {
           <a href="https://www.facebook.com/LesterHVAC/" target="_blank">
             <BsFacebook size={40} className="text-[#2ea4fb]" />
           </a>
-          <BsInstagram size={40} className="text-[#ff3f3f] ml-2" />
+          <a href="https://www.instagram.com/lesterheatandair/" target="_blank">
+            <BsInstagram size={40} className="text-[#ff3f3f] ml-2" />
+          </a>
         </div>
       </div>
     </div>

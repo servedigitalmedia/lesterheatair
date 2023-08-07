@@ -27,7 +27,9 @@ const MobileFooter = () => {
       >
         <BsFacebook size={30} className="text-[#2ea4fb]" />
       </a>
-      <BsInstagram size={30} className="text-[#ff3f3f] ml-2 mt-1" />
+      <a href="https://www.instagram.com/lesterheatandair/" target="_blank">
+        <BsInstagram size={30} className="text-[#ff3f3f] ml-2 mt-1" />
+      </a>
     </div>
   );
 };
