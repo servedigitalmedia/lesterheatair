@@ -1,6 +1,6 @@
 'use-client';
 import Image from 'next/image';
-import HomeImage from '../../../public/HomeImage.jpeg';
+import HomeImage from '../../../public/HomeImage.png';
 import Chris from '../../../public/Chris.png';
 import truck from '../../../public/truck.png';
 import Link from 'next/link';
