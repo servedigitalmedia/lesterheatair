@@ -103,35 +103,23 @@ const Page = () => {
           />
           <div className="mb-8 lg:mb-24 mt-2 mx-[6%]">
             <h4>
-              Working in HVAC services since 1987, Brent Lester founded Lester
-              Heat and Air in 2016 to provide heating and air conditioning
-              services to Kiowa county and the surrounding areas.
+              With over 10 years of HVAC experience, Chris Burnett joined Lester
+              Heat and Air in 2022 as its Operations Manager.
             </h4>
             <br />
             <h4>
-              With extensive knowledge on unit repair and maintenance (as well
-              the HVAC industry at large), Brent also works as an Industrial
-              Coordinator/Trainer for the Business Industries Service Department
-              at Caddo Kiowa Technology Center. You can trust Brent to provide
-              knowledge and experience when working on your home’s heating and
-              air conditioning needs!
+              Chris has spent many years in construction and different
+              management positions. Along with his personal proficiency he
+              brings to each job, Chris leads his team to make sure each project
+              is completed with excellence. Chris will make sure your heater and
+              air conditioner is running efficiently!
             </h4>
             <br />
-            <h2>Education & Credentials:</h2>
-            <h4 className="font-semibold">
-              Bachelor of Science in Business Management
-            </h4>
-            <h4>University of Phoenix, 2002</h4>
-            <br />
-            <h4 className="font-semibold">
-              Associate Degree in Applied Science HVACR
-            </h4>
-            <h4>Oklahoma State University Tech. Okmulgee, 1987</h4>
-            <br />
-            <h4>
-              Standard Teaching Certificate for TRADE/INDUSTRIAL EDUCATION
-              Oklahoma State Dept. of Ed.
-            </h4>
+            <h2>Credentials:</h2>
+
+            <h4 className="font-semibold">HAZMAT Certified</h4>
+
+            <h4 className="font-semibold">HVAC Journeyman Certified</h4>
           </div>
         </div>
       </div>
