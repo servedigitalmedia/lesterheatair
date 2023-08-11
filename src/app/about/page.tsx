@@ -87,6 +87,8 @@ const Page = () => {
               Standard Teaching Certificate for TRADE/INDUSTRIAL EDUCATION
               Oklahoma State Dept. of Ed.
             </h4>
+            <br />
+            <h4>Oklahoma Mechanical Contractors License</h4>
           </div>
         </div>
       </div>
@@ -120,6 +122,8 @@ const Page = () => {
             <h4 className="font-semibold">HAZMAT Certified</h4>
 
             <h4 className="font-semibold">HVAC Journeyman Certified</h4>
+            <h4 className="font-semibold">EPA 608 Certified</h4>
+            <h4 className="font-semibold">MSHA Certified</h4>
           </div>
         </div>
       </div>

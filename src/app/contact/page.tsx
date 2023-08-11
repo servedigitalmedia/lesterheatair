@@ -1,5 +1,6 @@
 'use client';
 import React, { useState, useEffect, useRef } from 'react';
+import { send } from '@emailjs/browser';
 
 const initialState = {
   name: '',
@@ -47,46 +48,43 @@ const Page = () => {
     phoneLength.current = target.value.length;
   };
 
-  // const handleSubmit = (event: any) => {
-  //   event.preventDefault();
-  //   console.log(contactState);
-  //   setDisabled(true);
-  //   if (
-  //     contactState.name === '' ||
-  //     contactState.email === '' ||
-  //     contactState.message === '' ||
-  //     contactState.subject === '' ||
-  //     contactState.number === ''
-  //   ) {
-  //     setError(true);
-  //     setDisabled(false);
-  //     return;
-  //   } else if (contactState.number.length !== 12) {
-  //     setError(true);
-  //     setDisabled(false);
-  //     return;
-  //   }
-  //   if (contactState.subject === 'web') {
-  //     contactState.secondUser = 'mattbloemke@gmail.com';
-  //   }
-  //   send(
-  //     'service_ne09bab',
-  //     'template_ayev97b',
-  //     contactState,
-  //     'O_RJ2i4_VWfnQbVbv'
-  //   ).then(
-  //     (result) => {
-  //       console.log(result.text);
-  //       setAlert(true);
-  //       setContactState(initialState);
-  //     },
-  //     (error) => {
-  //       setError(true);
-  //       console.log(error.text);
-  //     }
-  //   );
-  //   setDisabled(false);
-  // };
+  const handleSubmit = (event: any) => {
+    event.preventDefault();
+    console.log(contactState);
+    setDisabled(true);
+    if (
+      contactState.name === '' ||
+      contactState.email === '' ||
+      contactState.message === '' ||
+      contactState.subject === '' ||
+      contactState.number === ''
+    ) {
+      setError(true);
+      setDisabled(false);
+      return;
+    } else if (contactState.number.length !== 12) {
+      setError(true);
+      setDisabled(false);
+      return;
+    }
+    send(
+      'service_xizw2ks',
+      'template_o7euysq',
+      contactState,
+      '0Ba_L7O57g4nYNiNY'
+    ).then(
+      (result: { text: any }) => {
+        console.log(result.text);
+        setAlert(true);
+        setContactState(initialState);
+      },
+      (error: { text: any }) => {
+        setError(true);
+        console.log(error.text);
+      }
+    );
+    setDisabled(false);
+  };
 
   return (
     <div>
@@ -165,6 +163,7 @@ const Page = () => {
               <div className="justify-center flex">
                 <button
                   type="button"
+                  onClick={handleSubmit}
                   className="p-4 text-white bg-[#ff3f3f] hover:bg-[#d02230] active:scale-[.99] mt-4 disabled:opacity-20 disabled:scale-100"
                 >
                   Send message
