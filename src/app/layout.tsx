@@ -35,10 +35,13 @@ export default function RootLayout({
       <head>
         <title>Lester Heat and Air</title>
         <meta property="og:title" content="Lester Heat and Air" />
-        {/* <meta property="og:image" content="https://i.imgur.com/R6nYXVo.png" />
-        <meta property="og:url" content="https://servedm.com" /> */}
+        <meta property="og:image" content="https://i.imgur.com/7PAeVpD.png" />
+        <meta property="og:url" content="https://lesterheatandair.com" />
         <meta property="og:type" content="website" />
-        {/* <meta property="og:description" content="Serving to build your brand" /> */}
+        <meta
+          property="og:description"
+          content="Satisfying one customer at a time"
+        />
       </head>
       <body id={pathname?.slice(1)} className={inter.className + ' grain-bg'}>
         <div className="w-full h-[28px] flex justify-center items-center bg-[#3c3c3c] ">
