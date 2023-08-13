@@ -26,7 +26,6 @@ const Page = () => {
 
   const handleChange = ({ target }: any) => {
     if (target.name === 'number') {
-      console.log(target.value.length, phoneLength.current);
       if (target.value.length === 3 && phoneLength.current === 2) {
         target.value = target.value + '-';
       } else if (target.value.length === 7 && phoneLength.current === 6) {
