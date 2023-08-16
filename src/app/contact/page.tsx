@@ -1,6 +1,8 @@
 'use client';
 import React, { useState, useEffect, useRef } from 'react';
 import { send } from '@emailjs/browser';
+import Alert from '@/components/Alert';
+import Error from '@/components/Error';
 
 const initialState = {
   name: '',
@@ -8,21 +10,35 @@ const initialState = {
   email: '',
   subject: '',
   message: '',
-  secondUser: '',
 };
 
 const Page = () => {
   const [contactState, setContactState] = useState(initialState);
   const [error, setError] = useState(false);
   const [alert, setAlert] = useState(false);
-  const [disabled, setDisabled] = useState(false);
+  const [disabled, setDisabled] = useState("disabled");
+  const [errorMessage, setMessage] = useState("");
   const phoneLength = useRef(0);
 
   useEffect(() => {
     setError(false);
     setAlert(false);
+    setMessage("");
     setContactState(initialState);
   }, []);
+
+  useEffect(()=> {
+    console.log("changingstate")
+    const formValues = Object.values(contactState);
+    const allFieldsFilled = formValues.every((element) => element.length > 0);
+    console.log(allFieldsFilled)
+    console.log(contactState)
+    if (allFieldsFilled) {
+      setDisabled("");
+    } else {
+      setDisabled("disabled");
+    }
+  }, [contactState]);
 
   const handleChange = ({ target }: any) => {
     if (target.name === 'number') {
@@ -50,7 +66,7 @@ const Page = () => {
   const handleSubmit = (event: any) => {
     event.preventDefault();
     console.log(contactState);
-    setDisabled(true);
+    setDisabled("disabled");
     if (
       contactState.name === '' ||
       contactState.email === '' ||
@@ -59,11 +75,13 @@ const Page = () => {
       contactState.number === ''
     ) {
       setError(true);
-      setDisabled(false);
+      setDisabled("");
+      setMessage("All fields must be filled out");
       return;
     } else if (contactState.number.length !== 12) {
       setError(true);
-      setDisabled(false);
+      setDisabled("");
+      setMessage("Please enter a 10 digit phone number");
       return;
     }
     send(
@@ -79,10 +97,10 @@ const Page = () => {
       },
       (error: { text: any }) => {
         setError(true);
-        console.log(error.text);
+        setMessage(error.text);
+        console.error(error.text);
       }
     );
-    setDisabled(false);
   };
 
   return (
@@ -163,6 +181,7 @@ const Page = () => {
                 <button
                   type="button"
                   onClick={handleSubmit}
+                  disabled={!!disabled.length}
                   className="p-4 text-white bg-[#ff3f3f] hover:bg-[#d02230] active:scale-[.99] mt-4 disabled:opacity-20 disabled:scale-100"
                 >
                   Send message
@@ -172,6 +191,8 @@ const Page = () => {
           </div>
         </div>
       </div>
+      {alert ? <Alert alert={alert} setAlert={setAlert} message="Your message has been sent!" /> : null}
+      {error ? <Error error={error} setError={setError} message={errorMessage} /> : null}
     </div>
   );
 };
