@@ -1,14 +1,14 @@
 'use-client';
 import Image from 'next/image';
-import placeholder2 from '../../public/placeholder2.png';
-import placeholder3 from '../../public/placeholder3.png';
-import placeholder4 from '../../public/placeholder4.png';
-import placeholder5 from '../../public/placeholder5.png';
-import placeholder6 from '../../public/placeholder6.png';
-import trane from '../../public/trane.png';
-import placeholder9 from '../../public/placeholder9.png';
-import { BsStarFill } from 'react-icons/bs';
 import Link from 'next/link';
+import { BsStarFill } from 'react-icons/bs';
+import hvacImageThree from '../../public/hvacImage3.png';
+import hvacImageOne from '../../public/hvacImage1.png';
+import hvacImageTwo from '../../public/hvacImage2.png';
+import hvacImageFour from '../../public/hvacImage4.png';
+import hvacImageFive from '../../public/hvacImage5.png';
+import trane from '../../public/trane.png';
+import LesterHeatAirHomeLogo from '../../public/LesterHeatAirHomeLogo.png';
 
 export default function Home() {
   return (
@@ -45,7 +45,7 @@ export default function Home() {
         </div>
         <div className="w-full lg:w-[40%] h-auto items-center justify-center flex md:my-1 bg-[#f0f0f0] overflow-hidden relative">
           <Image
-            src={placeholder9}
+            src={LesterHeatAirHomeLogo}
             alt="Lester heat and air home page image"
             style={{ objectFit: 'cover' }}
           />
@@ -60,10 +60,9 @@ export default function Home() {
             <h3 className="font-medium mb-2">
               We service all brands of HVAC equipment
             </h3>
-            <h3 className="hidden md:block">&nbsp;</h3>
             <Image
-              src={placeholder3}
-              alt="Lester heat and air home page image"
+              src={hvacImageOne}
+              alt="Generic HVAC image"
               style={{ objectFit: 'cover' }}
               className="w-full"
             />
@@ -73,8 +72,8 @@ export default function Home() {
               We specialize in residential and light commercial
             </h3>
             <Image
-              src={placeholder4}
-              alt="Lester heat and air home page image"
+              src={hvacImageTwo}
+              alt="Generic HVAC image"
               style={{ objectFit: 'cover' }}
               className="w-full"
             />
@@ -85,8 +84,8 @@ export default function Home() {
               From new construction to remodels
             </h3>
             <Image
-              src={placeholder2}
-              alt="Lester heat and air home page image"
+              src={hvacImageThree}
+              alt="Generic HVAC image"
               style={{ objectFit: 'cover' }}
               className="w-full"
             />
@@ -98,7 +97,7 @@ export default function Home() {
             <h3 className="hidden md:block">&nbsp;</h3>
             <Image
               src={trane}
-              alt="Lester heat and air home page image"
+              alt="Image of Trane logo"
               style={{ objectFit: 'cover' }}
               className="w-full mt-8 mb-9"
             />
@@ -108,8 +107,8 @@ export default function Home() {
               We offer financing options to get you the service you need
             </h3>
             <Image
-              src={placeholder5}
-              alt="Lester heat and air home page image"
+              src={hvacImageFour}
+              alt="Image relating to financing and payment"
               style={{ objectFit: 'cover' }}
               className="w-full"
             />
@@ -118,8 +117,8 @@ export default function Home() {
             <h3 className="font-medium mb-2">We accept credit cards</h3>
             <h3 className="hidden md:block">&nbsp;</h3>
             <Image
-              src={placeholder6}
-              alt="Lester heat and air home page image"
+              src={hvacImageFive}
+              alt="Image relating to financing and payment"
               style={{ objectFit: 'cover' }}
               className="w-full"
             />

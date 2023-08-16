@@ -1,14 +1,14 @@
 'use client';
-import Image from 'next/image';
-import './globals.css';
-import { Roboto } from 'next/font/google';
-import Link from 'next/link';
-import logo from '../../public/lester heat and air logo.png';
-import { usePathname } from 'next/navigation';
-import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from 'react-icons/ai';
 import { useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { Roboto } from 'next/font/google';
+import { usePathname } from 'next/navigation';
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import DesktopFooter from '@/components/DesktopFooter';
 import MobileFooter from '@/components/MobileFooter';
+import logo from '../../public/lester heat and air logo.png';
+import './globals.css';
 
 const inter = Roboto({ subsets: ['latin'], weight: '500' });
 
@@ -119,7 +119,7 @@ export default function RootLayout({
                     <Image
                       onClick={() => setNav(false)}
                       src={logo}
-                      alt="/"
+                      alt="Lester heat and air logo"
                       width={125}
                     />
                   </Link>

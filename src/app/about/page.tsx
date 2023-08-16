@@ -1,9 +1,9 @@
 'use-client';
 import Image from 'next/image';
-import HomeImage from '../../../public/HomeImage.png';
-import Chris from '../../../public/Chris.png';
-import truck from '../../../public/truck.png';
 import Link from 'next/link';
+import brentImage from '../../../public/BrentImage.png';
+import chrisImage from '../../../public/chrisImage.png';
+import lesterTruck from '../../../public/lesterTruck.png';
 
 const Page = () => {
   return (
@@ -28,8 +28,8 @@ const Page = () => {
             <br />
           </div>
           <Image
-            src={truck}
-            alt="homeimage"
+            src={lesterTruck}
+            alt="Image for the Lester Heat and Air company truck with company logo"
             className="md:ml-[6%] md:mr-[4%] max-w-[35%] m-5 hidden lg:block"
           />
         </div>
@@ -39,8 +39,8 @@ const Page = () => {
           and air conditioning units operating quickly!
         </h3>
         <Image
-          src={truck}
-          alt="homeimage"
+          src={lesterTruck}
+          alt="Image for the Lester Heat and Air company truck with company logo"
           className="mx-[5%] block w-[90%] lg:hidden"
         />
       </div>
@@ -50,8 +50,8 @@ const Page = () => {
       <div className="bg-[#f5f5f5] mt-1 mb-20">
         <div className="flex justify-center flex-col lg:flex-row items-center ">
           <Image
-            src={HomeImage}
-            alt="homeimage"
+            src={brentImage}
+            alt="Picture of owner of Lester Heat and Air, Brent Lester"
             height={500}
             className="mt-2 lg:ml-[6%]"
           />
@@ -98,8 +98,8 @@ const Page = () => {
       <div className="bg-[#f5f5f5] mt-1">
         <div className="flex justify-center flex-col lg:flex-row items-center ">
           <Image
-            src={Chris}
-            alt="homeimage"
+            src={chrisImage}
+            alt="Picture of Operations Manager, Chriss Burnett"
             height={500}
             className="mt-2 lg:ml-[6%]"
           />
@@ -118,9 +118,7 @@ const Page = () => {
             </h4>
             <br />
             <h2>Credentials:</h2>
-
             <h4 className="font-semibold">HAZMAT Certified</h4>
-
             <h4 className="font-semibold">HVAC Journeyman Certified</h4>
             <h4 className="font-semibold">EPA 608 Certified</h4>
             <h4 className="font-semibold">MSHA Certified</h4>
