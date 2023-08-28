@@ -45,6 +45,16 @@ const Page = () => {
         />
       </div>
 
+      <h1 className="text-center bg-[#f5f5f5] mt-20">Hours of Operation</h1>
+      <div className="bg-[#f5f5f5] mt-1 pb-2">
+        <div className="flex justify-center flex-col md:flex-row items-center ">
+          <div className="mx-[6%] pt-3">
+            <h3>Monday - Friday: 8:00am to 5:00pm</h3>
+            <h3>Saturday: *By appointment only*</h3>
+          </div>
+        </div>
+      </div>
+
       <h1 className="text-center bg-[#f5f5f5] mt-20 pt-1">Brent Lester</h1>
       <h2 className="text-center bg-[#f5f5f5] pb-1">Owner</h2>
       <div className="bg-[#f5f5f5] mt-1 mb-20">
