@@ -14,7 +14,7 @@ const MobileFooter = () => {
       <a href="https://goo.gl/maps/h4SkpMJqDJuSUcZ46" target="_blank">
         <MdOutlineLocationOn size={35} className="bg white text-[#2ea4fb]" />
       </a>
-      <a href="tel:+5806392849">
+      <a href="tel:+5806951907">
         <FaPhone size={25} className="text-white mr-2 mt-[6px]" />
       </a>
       <Link href="/contact">

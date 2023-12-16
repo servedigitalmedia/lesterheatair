@@ -16,27 +16,27 @@ const Page = () => {
   const [contactState, setContactState] = useState(initialState);
   const [error, setError] = useState(false);
   const [alert, setAlert] = useState(false);
-  const [disabled, setDisabled] = useState("disabled");
-  const [errorMessage, setMessage] = useState("");
+  const [disabled, setDisabled] = useState('disabled');
+  const [errorMessage, setMessage] = useState('');
   const phoneLength = useRef(0);
 
   useEffect(() => {
     setError(false);
     setAlert(false);
-    setMessage("");
+    setMessage('');
     setContactState(initialState);
   }, []);
 
-  useEffect(()=> {
-    console.log("changingstate")
+  useEffect(() => {
+    console.log('changingstate');
     const formValues = Object.values(contactState);
     const allFieldsFilled = formValues.every((element) => element.length > 0);
-    console.log(allFieldsFilled)
-    console.log(contactState)
+    console.log(allFieldsFilled);
+    console.log(contactState);
     if (allFieldsFilled) {
-      setDisabled("");
+      setDisabled('');
     } else {
-      setDisabled("disabled");
+      setDisabled('disabled');
     }
   }, [contactState]);
 
@@ -66,7 +66,7 @@ const Page = () => {
   const handleSubmit = (event: any) => {
     event.preventDefault();
     console.log(contactState);
-    setDisabled("disabled");
+    setDisabled('disabled');
     if (
       contactState.name === '' ||
       contactState.email === '' ||
@@ -75,13 +75,13 @@ const Page = () => {
       contactState.number === ''
     ) {
       setError(true);
-      setDisabled("");
-      setMessage("All fields must be filled out");
+      setDisabled('');
+      setMessage('All fields must be filled out');
       return;
     } else if (contactState.number.length !== 12) {
       setError(true);
-      setDisabled("");
-      setMessage("Please enter a 10 digit phone number");
+      setDisabled('');
+      setMessage('Please enter a 10 digit phone number');
       return;
     }
     send(
@@ -107,7 +107,7 @@ const Page = () => {
     <div>
       <div className="w-full bg-[#f5f5f5]">
         <h2 className="text-center py-2 mt-1">
-          Call us at (580) 639-2849 or email us below
+          Call us at (580) 695-1907 or email us below
         </h2>
       </div>
       <div className="flex justify-center items-center mb-20">
@@ -191,8 +191,16 @@ const Page = () => {
           </div>
         </div>
       </div>
-      {alert ? <Alert alert={alert} setAlert={setAlert} message="Your message has been sent!" /> : null}
-      {error ? <Error error={error} setError={setError} message={errorMessage} /> : null}
+      {alert ? (
+        <Alert
+          alert={alert}
+          setAlert={setAlert}
+          message="Your message has been sent!"
+        />
+      ) : null}
+      {error ? (
+        <Error error={error} setError={setError} message={errorMessage} />
+      ) : null}
     </div>
   );
 };

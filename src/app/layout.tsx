@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Roboto } from 'next/font/google';
 import { usePathname } from 'next/navigation';
+import { Analytics } from '@vercel/analytics/react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import DesktopFooter from '@/components/DesktopFooter';
 import MobileFooter from '@/components/MobileFooter';
@@ -174,6 +175,7 @@ export default function RootLayout({
         {children}
         <DesktopFooter />
         <MobileFooter />
+        <Analytics />
       </body>
     </html>
   );

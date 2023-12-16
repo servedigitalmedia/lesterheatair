@@ -24,7 +24,7 @@ const DesktopFooter = () => {
         <FaPhone size={35} className="text-[#2ea4fb] mr-2 mt-[6px]" />
         <div>
           <p className="text-[#2ea4fb]">Phone:</p>
-          <p className="text-white">(580) 639-2849</p>
+          <p className="text-white">(580) 695-1907</p>
         </div>
       </div>
       <div className="flex flex-row">
