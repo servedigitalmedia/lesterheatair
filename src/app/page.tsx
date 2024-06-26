@@ -99,7 +99,7 @@ export default function Home() {
               src={trane}
               alt="Image of Trane logo"
               style={{ objectFit: 'cover' }}
-              className="w-full mt-8 mb-9"
+              className="w-full"
             />
           </div>
           <div className="bg-[#f0f0f0] w-[90%] mx-[5%] md:w-[25%] md:mx-[1%] my-4 p-3">
